@@ -21,7 +21,7 @@ widget(container_y, {
     KEY("0", ")");
     KEY("-", "_");
     KEY("=", "+");
-    ACTION("⌫", targetedEvent("input", Backspace), 2.66);
+    ACTION("BS", targetedEvent("input", Backspace), 2.66);
   });
 
   widget(container_x, {
@@ -49,7 +49,7 @@ widget(container_y, {
     spacing: 4;
     height: $ui.size * 2;
     space(1);
-    ACTION("⇪", {
+    ACTION("Lock", {
       $ui.osk.caps = !$ui.osk.caps;
     }, 2.66, $ui.osk.caps);
     KEY("ф", "Ф");
@@ -71,7 +71,7 @@ widget(container_y, {
   widget(container_x, {
     spacing: 4;
     height: $ui.size * 2;
-    ACTION("⇧", {
+    ACTION("Shift", {
       $ui.osk.shift = !$ui.osk.shift;
     }, 1.5, $ui.osk.shift);
     KEY("я", "Я");
@@ -85,7 +85,7 @@ widget(container_y, {
     KEY("ю", "Ю");
     KEY(".", ",");
     KEY("-", "_");
-    ACTION("⇧", {
+    ACTION("Shift", {
       $ui.osk.shift = !$ui.osk.shift;
     }, 1.5, $ui.osk.shift);
   });
